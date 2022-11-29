@@ -1,0 +1,33 @@
+{
+  "name": "meetings-data-api",
+  "version": "1.0.0",
+  "description": "Meetin.gs Data API",
+  "dependencies": {
+    "async": "~ 0.2.9",
+    "cluster-server": "~ 0.0.5",
+    "express": "~ 3.3.0",
+    "abraxas": "2.1.10",
+    "md5": "~ 1.0.0",
+    "request": "~ 2.74.0",
+    "pusher" : "1.0.0",
+    "traverse" : "0.6.6",
+    "underscore": "~ 1.5.0"
+  },
+  "bin": "./data-api.js",
+  "scripts": {
+    "test": "echo No tests specified"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:meetings/data-api-node.git"
+  },
+  "contributors": [
+    { "name": "Jussi Kaijalainen", "email": "jussi@meetin.gs" },
+    { "name": "Tuomas Starck", "email": "tuomas@meetin.gs" },
+    { "name": "Antti Vähäkotamäki", "email": "antti@meetin.gs" }
+  ],
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/meetings/data-api-node/issues"
+  }
+}

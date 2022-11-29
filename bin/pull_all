@@ -1,0 +1,23 @@
+#!/bin/bash
+
+FROM=$1
+
+if [ "$FROM" == "" ]
+then
+    FROM=$(git rev-parse --abbrev-ref HEAD)
+fi
+
+git stash
+
+for X in alpha beta test dev local master
+do
+    if [ "$FROM" != "$X" ]
+    then
+        git checkout $X
+        git pull
+    fi
+done
+
+git checkout $FROM
+
+git stash pop
